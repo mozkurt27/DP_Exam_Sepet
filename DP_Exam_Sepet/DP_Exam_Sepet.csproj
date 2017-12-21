@@ -125,20 +125,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Debug\" />
     <Folder Include="bin\Release\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\Categories.txt" />
-    <Content Include="bin\Debug\Images\1.png" />
-    <Content Include="bin\Debug\Images\2.png" />
-    <Content Include="bin\Debug\Images\3.png" />
-    <Content Include="bin\Debug\Images\4.png" />
-    <Content Include="bin\Debug\Images\5.png" />
-    <Content Include="bin\Debug\Images\6.png" />
-    <Content Include="bin\Debug\Images\7.png" />
-    <Content Include="bin\Debug\Products.txt" />
-    <Content Include="bin\Debug\SoldProduct.txt" />
-    <Content Include="bin\Debug\Users.txt" />
+    <Content Include="Files\Categories.txt" />
+    <Content Include="Files\Images\1.png" />
+    <Content Include="Files\Images\2.png" />
+    <Content Include="Files\Images\3.png" />
+    <Content Include="Files\Images\4.png" />
+    <Content Include="Files\Images\5.png" />
+    <Content Include="Files\Images\6.png" />
+    <Content Include="Files\Images\7.png" />
+    <Content Include="Files\Products.txt" />
+    <Content Include="Files\SoldProduct.txt" />
+    <Content Include="Files\Users.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,6 @@
+tablet
+bilgisayar
+laptop
+müzikcalar
+as
+hava

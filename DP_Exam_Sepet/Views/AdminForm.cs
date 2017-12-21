@@ -61,7 +61,7 @@ namespace DP_Exam_Sepet.Views
         {
             Product pro = (Product)cbProducts.SelectedItem;
             
-            pbProduct.Image = Image.FromFile("Images\\"+pro.ImagesId+".png");
+            pbProduct.Image = Image.FromFile(Application.StartupPath.Replace("bin\\Debug", "") +"Files\\Images\\" +pro.ImagesId+".png");
         }
         private void btnCategoryAdd_Click(object sender, EventArgs e)
         {
@@ -96,7 +96,7 @@ namespace DP_Exam_Sepet.Views
             {
                 dataHolder.Products.Add(pro);
                 cbProducts.Items.Clear();
-                File.Copy(filename, "Images\\" + (pro.ImagesId) + ".png");
+                File.Copy(filename, Application.StartupPath.Replace("bin\\Debug", "") + "Files\\Images\\" + (pro.ImagesId) + ".png");
                 ProductsLoad();
                 MessageBox.Show("Ürün Eklendi");
                 return;

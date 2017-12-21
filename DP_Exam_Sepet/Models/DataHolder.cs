@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DP_Exam_Sepet.Models
 {
@@ -46,7 +47,8 @@ namespace DP_Exam_Sepet.Models
         }
         public void WriteSoldproduct()
         {
-            using (StreamWriter sw = new StreamWriter("SoldProduct.txt", false))
+            string path = Application.StartupPath.Replace("bin\\Debug", "");
+            using (StreamWriter sw = new StreamWriter(path+"Files\\SoldProduct.txt", false))
             {
                 for (int i = 0; i < SoldProducts.Count; i++)
                 {
@@ -57,7 +59,8 @@ namespace DP_Exam_Sepet.Models
         private void ReadSoldProduct()
         {
             List<SoldProduct> soldproduct = new List<SoldProduct>();
-            using (StreamReader sr = new StreamReader("SoldProduct.txt"))
+            string path = Application.StartupPath.Replace("bin\\Debug", "");
+            using (StreamReader sr = new StreamReader(path + "Files\\SoldProduct.txt"))
             {
 
                 string temp = "";
@@ -86,7 +89,8 @@ namespace DP_Exam_Sepet.Models
         private void ReadUsers()
         {
             List<AppUser> users = new List<AppUser>();
-            using (StreamReader sr=new StreamReader("Users.txt"))
+            string path = Application.StartupPath.Replace("bin\\Debug","");
+            using (StreamReader sr=new StreamReader(path+"Files\\Users.txt"))
             {
                 
                 string temp = "";
@@ -111,7 +115,8 @@ namespace DP_Exam_Sepet.Models
         }
         private void WriteUsers()
         {
-            using (StreamWriter sw = new StreamWriter("Users.txt", false))
+            string path = Application.StartupPath.Replace("bin\\Debug", "");
+            using (StreamWriter sw = new StreamWriter(path + "Files\\Users.txt", false))
             {
                 for (int i = 0; i < Users.Count; i++)
                 {
@@ -122,7 +127,8 @@ namespace DP_Exam_Sepet.Models
         private void ReadCategories()
         {
             List<Category> categories = new List<Category>();
-            using (StreamReader sr = new StreamReader("Categories.txt"))
+            string path = Application.StartupPath.Replace("bin\\Debug", "");
+            using (StreamReader sr = new StreamReader(path + "Files\\Categories.txt"))
             {
                 while (!sr.EndOfStream)
                 {
@@ -138,7 +144,8 @@ namespace DP_Exam_Sepet.Models
         }
         private void WriteCategories()
         {
-            using (StreamWriter sw = new StreamWriter("Categories.txt", false))
+            string path = Application.StartupPath.Replace("bin\\Debug", "");
+            using (StreamWriter sw = new StreamWriter(path + "Files\\Categories.txt", false))
             {
                 for (int i = 0; i < Categories.Count; i++)
                 {
@@ -149,7 +156,8 @@ namespace DP_Exam_Sepet.Models
         private void ReadProducts()
         {
             List<Product> products = new List<Product>();
-            using (StreamReader sr = new StreamReader("Products.txt"))
+            string path = Application.StartupPath.Replace("bin\\Debug", "");
+            using (StreamReader sr = new StreamReader(path + "Files\\Products.txt"))
             {
 
                 string temp = "";
@@ -170,7 +178,8 @@ namespace DP_Exam_Sepet.Models
         }
         private void WriteProducts()
         {
-            using (StreamWriter sw = new StreamWriter("Products.txt", false))
+            string path = Application.StartupPath.Replace("bin\\Debug", "");
+            using (StreamWriter sw = new StreamWriter(path + "Files\\Products.txt", false))
             {
                 for (int i = 0; i < Products.Count; i++)
                 {

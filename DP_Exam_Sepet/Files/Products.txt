@@ -1,0 +1,7 @@
+asdasd:23:tablet:1
+sdf:35:bilgisayar:2
+dell:1000:laptop:3
+delddd:20:laptop:4
+su:22:hava:5
+rüzgar:33:hava:6
+bayak:100:hava:7
