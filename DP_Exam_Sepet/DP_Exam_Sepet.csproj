@@ -49,6 +49,9 @@
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\SoldProduct.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Views\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +111,9 @@
     <EmbeddedResource Include="Views\SaveUserForm.resx">
       <DependentUpon>SaveUserForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Debug\DP_Exam_Sepet.exe.config" />
+    <None Include="bin\Debug\DP_Exam_Sepet.vshost.exe.config" />
+    <None Include="bin\Debug\DP_Exam_Sepet.vshost.exe.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -120,6 +126,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Categories.txt" />
+    <Content Include="bin\Debug\DP_Exam_Sepet.exe" />
+    <Content Include="bin\Debug\DP_Exam_Sepet.pdb" />
+    <Content Include="bin\Debug\DP_Exam_Sepet.vshost.exe" />
+    <Content Include="bin\Debug\Images\1.png" />
+    <Content Include="bin\Debug\Images\2.png" />
+    <Content Include="bin\Debug\Images\3.png" />
+    <Content Include="bin\Debug\Images\4.png" />
+    <Content Include="bin\Debug\Images\5.png" />
+    <Content Include="bin\Debug\Images\6.png" />
+    <Content Include="bin\Debug\Images\7.png" />
+    <Content Include="bin\Debug\Products.txt" />
+    <Content Include="bin\Debug\SoldProduct.txt" />
+    <Content Include="bin\Debug\Users.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
