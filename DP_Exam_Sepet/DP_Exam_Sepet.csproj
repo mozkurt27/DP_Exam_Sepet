@@ -111,9 +111,6 @@
     <EmbeddedResource Include="Views\SaveUserForm.resx">
       <DependentUpon>SaveUserForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="bin\Debug\DP_Exam_Sepet.exe.config" />
-    <None Include="bin\Debug\DP_Exam_Sepet.vshost.exe.config" />
-    <None Include="bin\Debug\DP_Exam_Sepet.vshost.exe.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -128,10 +125,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="bin\Debug\Categories.txt" />
-    <Content Include="bin\Debug\DP_Exam_Sepet.exe" />
-    <Content Include="bin\Debug\DP_Exam_Sepet.pdb" />
-    <Content Include="bin\Debug\DP_Exam_Sepet.vshost.exe" />
     <Content Include="bin\Debug\Images\1.png" />
     <Content Include="bin\Debug\Images\2.png" />
     <Content Include="bin\Debug\Images\3.png" />
@@ -142,9 +139,6 @@
     <Content Include="bin\Debug\Products.txt" />
     <Content Include="bin\Debug\SoldProduct.txt" />
     <Content Include="bin\Debug\Users.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
